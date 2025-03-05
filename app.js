@@ -7,6 +7,7 @@ const connectFlash = require('connect-flash');
 const connectDB = require('./config/database');
 const authRoutes = require('./routes/authRoutes');
 const adminRoutes = require('./routes/adminRoutes');
+const userRoutes = require('./routes/userRoutes'); // Importar las rutas de usuario
 const { ensureAuthenticated, ensureAdmin } = require('./middleware/authMiddleware');
 require('dotenv').config();
 require('./config/passport')(passport);
@@ -44,6 +45,7 @@ app.use((req, res, next) => {
 // Rutas
 app.use('/', authRoutes);
 app.use('/', adminRoutes);
+app.use('/api/users', userRoutes); // rutas del usuario
 app.get('/', (req, res) => res.render('index', { title: 'Inicio' }));
 app.get('/dashboard', ensureAuthenticated, (req, res) => {
   if (req.user.role === 'admin') {
@@ -54,4 +56,4 @@ app.get('/dashboard', ensureAuthenticated, (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, console.log(`Server running on port ${PORT}`)); 
+app.listen(PORT, console.log(`Server running on port ${PORT}`));
