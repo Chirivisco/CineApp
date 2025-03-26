@@ -46,7 +46,7 @@ Una aplicación web moderna para explorar, calificar y guardar tus películas fa
 
 1. Clona el repositorio
 ```bash
-git clone https://github.com/tu-usuario/cineapp.git
+git clone https://github.com/Chirivisco/cineapp.git
 cd cineapp
 ```
 
@@ -79,10 +79,6 @@ npm run dev
 npm run serve
 ```
 
-## 📱 Capturas de Pantalla
-
-[Agrega aquí algunas capturas de pantalla de tu aplicación]
-
 ## 🔒 Seguridad
 
 - Autenticación JWT
@@ -90,24 +86,3 @@ npm run serve
 - Protección de rutas
 - Validación de datos
 
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, abre un issue primero para discutir los cambios que te gustaría hacer.
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE.md](LICENSE.md) para más detalles.
-
-## 👥 Autores
-
-- Tu Nombre - [@tu-usuario](https://github.com/tu-usuario)
-
-## 🙏 Agradecimientos
-
-- [TMDB](https://www.themoviedb.org/) por su excelente API
-- La comunidad de Vue.js y Node.js
-- Todos los contribuidores del proyecto
-
----
-
-Hecho con ❤️ para los amantes del cine 
